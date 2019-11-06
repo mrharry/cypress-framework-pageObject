@@ -1,0 +1,31 @@
+{
+  "name": "cypress-framework",
+  "version": "1.0.0",
+  "description": "Cypress using Cucumber with Page Objects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cyrun": "node_modules/.bin/cypress run --browser chrome"
+  },
+  "keywords": [
+    "Cypress",
+    "Cucumber",
+    "BDD"
+  ],
+  "author": "Stuart Robertson",
+  "license": "ISC",
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "devDependencies": {
+    "cosmiconfig": "^5.2.1",
+    "cypress": "^3.6.0",
+    "cypress-cucumber-preprocessor": "^1.16.2"
+  }
+}

@@ -1,0 +1,18 @@
+/**
+ * Created by stuart1 on 05/11/2019.
+ */
+export default class BasePage {
+    
+    navigate(path) {
+        
+        cy
+            .visit(this.baseUrl + path)
+            .get(this.cookieMessage)
+            .click();
+    }
+
+    getPageTitle() {
+        return cy.title()
+    }
+
+}
