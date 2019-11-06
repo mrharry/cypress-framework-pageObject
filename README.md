@@ -3,7 +3,7 @@
 ## Page Object Model
 Cypress does not recommend using the Page Object Model pattern that most folk will be used to from the Selenium based
 frameworks (see the article by Martin Fowler [Page Object](https://martinfowler.com/bliki/PageObject.html) ) the 
-preferred option i to use the Cypress Custom Commands, this POM version has been added to provide a comparison.
+preferred option is to use the Cypress Custom Commands, this POM version has been added to provide a comparison.
 
 
 # Installing Cypress from Scratch
@@ -30,7 +30,7 @@ from the project root folder.
 
 This will also generate the following scaffold directory structure 
 
-![alt text](./cypress scaffold framework.png)
+![alt text](./cypress.scaffold.framework.png)
 
 To run from  a command line add a Script to the Package JSON file
 
