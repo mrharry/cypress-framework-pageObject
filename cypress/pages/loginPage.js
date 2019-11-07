@@ -5,8 +5,7 @@ export default class LoginPage extends BasePage {
     constructor() {
         super()
     }
-
-    baseUrl      = "https://www.entrycentral.com";
+    
     username     = "#username";
     password     = "#password";
     alertMessage = ".alert";
