@@ -10,30 +10,17 @@ export default class LoginPage extends BasePage {
     password     = "#password";
     alertMessage = ".alert";
     submitButton = "#_submit";
-    cookieMessage = "#ccc-close";
 
     fillLoginCredentials(credType) {
+        let field = cy.get(this.username);
+        field.clear();
+        field.type(Cypress.env(credType + 'User'));
 
-        if (credType === "invalid") {
-            let field = cy.get(this.username);
-            field.clear();
-            field.type('blahhhhhhhhhhhhh');
-
-            field = cy.get(this.password);
-            field.clear();
-            field.type('blahhhhhhh');
-            this.submit(this.submitButton)
-        } else {
-            let field = cy.get(this.username);
-            field.clear();
-            field.type(Cypress.env('validUser'));
-
-            field = cy.get(this.password);
-            field.clear();
-            field.type(Cypress.env('validPassword'));
-            this.submit(this.submitButton)
-        }
-
+        field = cy.get(this.password);
+        field.clear();
+        field.type(Cypress.env(credType + 'Password'));
+        
+        this.submit(this.submitButton)
     }
 
     getAlertMessage() {

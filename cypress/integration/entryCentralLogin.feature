@@ -11,6 +11,6 @@ Feature: Validate the login page
     Then I should see the "Invalid credentials" login error message
 
   Scenario: When I log in with a valid registered email/password combination
-    When I login with a "registered" credential combination
+    When I login with a "valid" credential combination
     Then I should see "Account - EntryCentral.com" displayed as the page title
 
